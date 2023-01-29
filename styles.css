@@ -2,6 +2,10 @@ body {
     background-image: url(bg.jpg);
     background-size: cover;
 }
+
+p {
+    line-height: 16px;
+}
 .container {
     width: 100%;
     padding-right: 15px;
@@ -61,12 +65,24 @@ body {
 
 .card-body ul {
     list-style: none;
-    padding: 0;
 }
 
 .card-body li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    line-height: 25px;;
 }
+
+.card-body ul li::before {
+    content: "✓";
+    display: inline-block;
+    margin-right: 0.2rem;
+  }
+
+  ol {
+
+    margin-left: 20px;
+  }
+
 
 .card-body a {
     color: #000;
@@ -79,6 +95,38 @@ body {
 .text-white {
     color: #fff;
 }
+
+span .download-button {
+
+    float: right;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+  
+  .download-button:hover {
+    background-color: #2980b9;
+  }
+
+  .download-button a{
+
+    text-decoration: none;
+  }
+  
+  .download-button a:hover{
+
+color:white;  }
 
 
 /* Add styles for social media links */
